@@ -6,16 +6,12 @@ public class Exersise9 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		
 		System.out.println("Enter number of array 1 elements>");
 		int ar1_elem = sc.nextInt();
-		
 		System.out.println("Enter number of array 2 elements>");
 		int ar2_elem = sc.nextInt();
-		
 		System.out.println("Specify Array Separator Number>");
 		int k = sc.nextInt();
-		
 		sc.close();
 		
 		int[] firstArray = new int[ar1_elem];
