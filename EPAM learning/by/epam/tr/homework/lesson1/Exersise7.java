@@ -14,9 +14,7 @@ public class Exersise7 {
 		double h = sc.nextInt();
 		sc.close();
 		
-		function(a, b, h);
-		
-		
+		function(a, b, h);	
 	}
 
 	public static void function(double a, double b, double h){
@@ -30,6 +28,5 @@ public class Exersise7 {
 			System.out.printf("|\t%4.1f\t|\t%4.1f\t|\n", x, y);
 		}
 		System.out.println("---------------------------------");
-
 	}
 }
