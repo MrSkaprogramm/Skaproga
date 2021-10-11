@@ -23,13 +23,16 @@ public class ExersiseArrayJUnit {
 		System.out.println("Your array without second digits>");
 		
 		newArray(mas);
+		for(int x = 0; x < mas.length; x++){
+			System.out.print(mas[x]);
+		}
 	}
-	public static void newArray(int[] mas){
+	public static int[] newArray(int[] mas){
 		for(int x = 0; x < mas.length; x++){
 			if(((x + 1)%2 == 0)&&(x > 0)){
 				mas[x] = 0;
 				}
-			System.out.print(mas[x]);
 			}
+		return mas;
 		}
 }
