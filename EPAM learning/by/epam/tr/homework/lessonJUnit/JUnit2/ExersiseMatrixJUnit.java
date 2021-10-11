@@ -24,7 +24,7 @@ public class ExersiseMatrixJUnit {
 		Printmatrix(n, mas);
 	}
 		
-	public static void Printmatrix(int n, int mas[]){
+	public static int[][] Printmatrix(int n, int mas[]){
 		int[][] matrix = new int[n][n];
 		System.out.print("Your matrix>");
 		for(int line = 0; line < matrix.length; line++){
@@ -34,5 +34,6 @@ public class ExersiseMatrixJUnit {
 					System.out.print(matrix[line][column] + " ");
 			}
 		}
+		return matrix;
 	}
 }
