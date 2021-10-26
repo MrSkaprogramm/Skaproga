@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<app:appliance xmlns="https://epam.tr.com.appliance">
+	<app:microwaves>	
+		<app:microwave id="1">
+			<power>500</power>
+			<volume>40</volume>
+			<cameracover>enamel</cameracover>
+			<functionality>solo</functionality>
+		</app:microwave>
+		<app:microwave id="2">
+			<power>800</power>
+			<volume>15</volume>
+			<cameracover>steel</cameracover>
+			<functionality>grill</functionality>
+		</app:microwave>
+		<app:microwave id="3">
+			<power>1700</power>
+			<volume>20</volume>
+			<cameracover>acrylic</cameracover>
+			<functionality>convection</functionality>
+		</app:microwave>
+	</app:microwaves>
+	<app:fridges>
+		<app:fridge id="1">
+			<height>0.7</height>
+			<width>0.4</width>
+			<depth>60</depth>
+			<noiselevel>20</noiselevel>
+			<energyconsumption>A</energyconsumption>
+		</fridge>
+		<app:fridge id="2">
+			<height>1.4</height>
+			<width>0.6</width>
+			<depth>100</depth>
+			<noiselevel>30</noiselevel>
+			<energyconsumption>A</energyconsumption>
+		</fridge>
+		<app:fridge id="3">
+			<height>2.0</height>
+			<width>0.8</width>
+			<depth>400</depth>
+			<noiselevel>40</noiselevel>
+			<energyconsumption>A</energyconsumption>
+		</fridge>
+	</app:fridges>
+	<app:coffeemachines>
+		<app: coffeemachine id="1">
+			<controltype>sensor</controltype>
+			<power>1300</power>
+			<cappuccino>automatic</cappuccino>
+			<type>capsule</type>
+		</coffeemachine>
+		<app: coffeemachine id="2">
+			<controltype>sensor</controltype>
+			<power>2000</power>
+			<cappuccino>automatic</cappuccino>
+			<type>carob</type>
+		</coffeemachine>
+		<app: coffeemachine id="3">
+			<controltype>sensor</controltype>
+			<power>1450</power>
+			<cappuccino>manual</cappuccino>
+			<type>drip</type>
+		</coffeemachine>
+	</app:coffeemachines>
+	<app: stoves>
+		<app: stove id="1">
+			<type>gas</type>
+			<burners>4</burners>
+			<volume>50</volume>
+			<cleaning>manual</cleaning>
+		</stove>
+		<app: stove id="2">
+			<type>electric</type>
+			<burners>5</burners>
+			<volume>70</volume>
+			<cleaning>selfcleaning</cleaning>
+		</stove>
+		<app: stove id="3">
+			<type>electric</type>
+			<burners>4</burners>
+			<volume>60</volume>
+			<cleaning>manual</cleaning>
+		</stove>
+	</app: stoves>
+	<app:TVs>
+		<app:TV id="1">
+			<screentype>IPS</screentype>
+			<OS>android</OS>
+			<diagonal>32</diagonal>
+		</TV>
+		<app:TV id="2">
+			<screentype>amoled</screentype>
+			<OS>tizen</OS>
+			<diagonal>32</diagonal>
+		</TV>
+		<app:TV id="3">
+			<screentype>IPS</screentype>
+			<OS>webos</OS>
+			<diagonal>32</diagonal>
+		</TV>
+	</app:TVs>
+	<app:kettles>
+		<app:kettle id="1">
+			<volume>1</volume>
+			<power>2000</power>
+			<material>plastic</material>
+		</kettle>
+		<app:kettle id="2">
+			<volume>2</volume>
+			<power>2500</power>
+			<material>сeramics</material>
+		</kettle>
+		<app:kettle id="3">
+			<volume>1</volume>
+			<power>1500</power>
+			<material>glass</material>
+		</kettle>
+	</app:kettles>
+	<app:washingmachines>
+		<app:washer id="1">
+			<loadtype>vertical</loadtype>
+			<installationtype>builtin</installationtype>
+			<depth>0.4</depth>
+		</washer>
+		<app:washer id="2">
+			<loadtype>frontal</loadtype>
+			<installationtype>separately</installationtype>
+			<depth>0.6</depth>
+		</washer>
+		<app:washer id="3">
+			<loadtype>frontal</loadtype>
+			<installationtype>builtin</installationtype>
+			<depth>0.5<depth>
+		</washer>
+	</app:washingmachines>
+</app:appliance>
