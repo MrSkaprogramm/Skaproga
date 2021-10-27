@@ -1,5 +1,3 @@
-package by.epam.tr.main;
-
 import by.epam.tr.main.model.People;
 import by.epam.tr.main.model.Root;
 import org.w3c.dom.Document;
@@ -28,8 +26,13 @@ public class Main {
 		
 		NodeList rootChilds = rootNode.getChildNodes();
 		
-		String mainName = null;
-		Node peopleNode = null;
+		Node microwavesNode = null;
+		Node fridgesNode = null;
+		Node coffeemachinesNode = null;
+		Node stovesNode = null;
+		Node TVsNode = null;
+		Node kettlesNode = null;
+		Node washingmachinesNode = null;
 		
 		for(int i = 0; i < rootChilds.getLength(); i++) {
 			if(rootChilds.item(i).getNodeType() != Node.ELEMENT_NODE) {
@@ -37,18 +40,39 @@ public class Main {
 			}
 		
 		switch(rootChilds.item(i).getNodeName()){
-			case "name":{
-				mainName = rootChilds.item(i).getTextContent();
+			case "microwaves":{
+				microwavesNode = rootChilds.item(i);
 				break;
 			}
-			case "people":{
-				peopleNode = rootChilds.item(i);
+			case "fridges":{
+				fridgesNode = rootChilds.item(i);
+				break;
+			}
+			case "coffeemachines":{
+				coffeemachinesNode = rootChilds.item(i);
+				break;
+			}
+			case "stoves":{
+				stovesNode = rootChilds.item(i);
+				break;
+			}
+			case "TVs":{
+				TVsNode = rootChilds.item(i);
+				break;
+			}
+			case "kettles":{
+				kettlesNode = rootChilds.item(i);
+				break;
+			}
+			case "washingmachines":{
+				washingmachinesNode = rootChilds.item(i);
 				break;
 			}
 		}
+		System.out.println("AAA " + rootChilds.item(i).getNodeName());
 	}
 
-		if(peopleNode == null) {
+		/*if(peopleNode == null) {
 			return;
 		}
 		
@@ -90,17 +114,17 @@ public class Main {
 		root.setPeople(peopleList);
 		root.setName(mainName);
 		
-		/*root.getPeople().stream().filter(people -> {
+		root.getPeople().stream().filter(people -> {
 			return people.getAge()==21;
 		}).forEach(people -> {
 			System.out.println("People " + people.toString());
-		});*/
+		});
 		
-		System.out.println("Root " + root.toString());
+		System.out.println("Root " + root.toString());*/
 }
 		
 	private static Document buildDocument() throws Exception {
-		File file = new File("XML for project");
+		File file = new File("XML for project1.xml");
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 			return dbf.newDocumentBuilder().parse(file);
 		}
