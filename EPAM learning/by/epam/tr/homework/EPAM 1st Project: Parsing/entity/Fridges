@@ -1,0 +1,43 @@
+public class Fridges {
+	private String energyconsumption;
+	private int height;
+	private int width;
+	private int depth;
+	private int noiselevel;
+	
+	public Fridges(String energyconsumption, int height, int width, int depth, int noiselevel) {
+		this.energyconsumption = energyconsumption;
+		this.height = height;
+		this.width = width;
+		this.depth = depth;
+		this.noiselevel = noiselevel;
+	}
+	
+	public String getEnergyconsumption(){
+		return energyconsumption;
+	}
+	
+	public int getHeight(){
+		return height;
+	}
+	
+	public int getWidth(){
+		return width;
+	}
+	
+	public int getDepth(){
+		return depth;
+	}
+	
+	public int getNoiselevel(){
+		return noiselevel;
+	}
+	
+	@Override
+	public String toString(){
+		return "Root{" +
+				"energyconsumption='" + energyconsumption + '\'' + 
+				" +, height=" + height + 
+				'}';
+	}
+}
