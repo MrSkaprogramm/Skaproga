@@ -1,0 +1,15 @@
+import java.io.Serializable;
+import java.util.Comparator;
+import beans.Driver;
+
+public class DriversSortByDistance implements Comparator<Driver>, Serializable {
+  /**
+   * 
+   */
+  private static final long serialVersionUID = 519169455730096736L;
+
+  @Override
+  public int compare(Driver o1, Driver o2) {
+    return o1.getMap().getDriverLocation().compareTo(o2.getMap().getDriverLocation());
+  }
+}
